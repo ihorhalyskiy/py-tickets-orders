@@ -86,6 +86,7 @@ class MovieSessionListSerializer(MovieSessionSerializer):
         sold_tickets = obj.tickets.count()
         return total_tickets - sold_tickets
 
+
 class TicketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ticket
